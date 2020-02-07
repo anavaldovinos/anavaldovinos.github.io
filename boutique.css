@@ -1,0 +1,95 @@
+body {
+  font-family: Brush Script MT;
+}
+/* Start of gallery */ 
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #FE8FF0;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #D48CCC;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* end of gallery */
+
+
+
+/* Style the header */
+header {
+  background-color: #ffcce0;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+/* nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/* end of nav bar */
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ff1a8c;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#ffe6f3;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

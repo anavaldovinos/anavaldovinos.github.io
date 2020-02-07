@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family:  font-family: Times New RomanT;T;
+}
+/* Start of gallery */ 
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #FE8FF0;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #D48CCC;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* end of gallery */
+
+
+
+/* Style the header */
+header {
+  background-color: #ffcce0;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+/* nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#EE6C94;
+}
+/* end of nav bar */
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #EA9AB3;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#ffe6f3;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+  
+  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<header>
+  <h2>Contact Page</h2>
+  
+</header>
+
+<section>
+
+  
+  <article>
+    <h1>We are located in 5649 Hollywood Blvd, Hollywood, CA 90028
+   </h1>
+    <p> Our email is anasboutique@yahoo.com, our phone number is (310) 739-0286,</p>
+    <p>
+    
+    
+    We only opened Monday-Saturday from 10am to 6pm, if you have any further quetions, feel free to contact us.</p>
+    <div class="gallery">
+      
+      
+      
+    <img src="map.jpg" width="600" height="600">
+  <div class="desc"></div>
+</div>
+
+  </article>
+  
+
+
+</section>
+
+<footer>
+  <p>Ana's Boutique</p>
+</footer>
+
+</body>
+</html>
